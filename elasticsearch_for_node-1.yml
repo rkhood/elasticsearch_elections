@@ -1,0 +1,18 @@
+# ======================== Elasticsearch Configuration =========================
+
+cluster.name: elections
+
+node.name: node-1
+
+cluster.initial_master_nodes: 
+    - node-1
+    - node-2
+
+cluster.routing.allocation.disk.watermark.low: 90%
+
+http.port: 9200
+
+discovery.seed_hosts:
+    - 'localhost'
+
+
